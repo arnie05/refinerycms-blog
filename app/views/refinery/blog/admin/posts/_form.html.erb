@@ -11,6 +11,17 @@
     <%= f.text_field :title, :class => 'larger widest' -%>
   </div>
 
+  <div class="field">
+    <%= f.label :picture %>
+    <%= render :partial => "/refinery/admin/image_picker", :locals => {
+      :f => f,
+      :field => :picture_id,
+      :image => f.object.picture,
+      :toggle_image_display => false
+    }
+    %>
+  </div>
+
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>

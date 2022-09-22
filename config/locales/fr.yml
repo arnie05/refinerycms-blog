@@ -168,5 +168,6 @@ fr:
         message: Message
       refinery/blog/post:
         title: Titre
-        body: Corps
+        body: Détails
         teaser: Résumé
+        picture: "Image (taille recommandée: 800px par 600px)"

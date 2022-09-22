@@ -5,6 +5,8 @@ module Refinery
     class Post < ActiveRecord::Base
       extend FriendlyId
 
+      belongs_to :picture, :class_name => '::Refinery::Image', optional: true
+
       translates :title, :body, :custom_url, :custom_teaser, :slug, include: :seo_meta
 
       attribute :title
